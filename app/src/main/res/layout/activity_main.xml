@@ -8,9 +8,10 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:cardBackgroundColor="@color/purple_200"
         android:layout_margin="16dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -50,6 +51,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/card_body"
                 app:layout_constraintTop_toBottomOf="@+id/card_title"
+                app:layout_constraintStart_toStartOf="parent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -73,6 +75,7 @@
                     android:id="@+id/signIn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+
                     android:ems="10"
                     android:inputType="textPersonName"
                     app:layout_constraintTop_toBottomOf="@id/card_body_text"
